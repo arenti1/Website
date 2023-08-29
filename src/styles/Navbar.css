@@ -1,0 +1,244 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+}
+
+.menu img {
+  max-height: 60px;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.7em;
+  transition: color 0.3s ease;
+  transition-duration: 0.5s;
+}
+
+.menu a:hover {
+  color: green;
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.popup {
+  width: 800px;  
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.popup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background: green;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.popup button:hover {
+  background: darkgreen;
+}
+
+.popup button:nth-of-type(2) {
+  background: #f5f5f5;
+  color: #333;
+  margin-top: 5px;
+}
+
+.popup button:nth-of-type(2):hover {
+  background: #ddd;
+}
+
+
+/* ... Your existing CSS ... */
+
+.popup {
+  display: flex;
+  width: 800px;
+  height: 400px; /* you can adjust this value as needed */
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Left side with vertical ribbon, logo, and quote */
+.popup-left {
+  flex: 1;
+  background-color: turquoise;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.popup-left img {
+  width: 80px; /* adjust as necessary */
+  height: 80px; /* adjust as necessary */
+  margin-bottom: 10px;
+}
+
+.popup-left h4 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  max-width: 80%;
+}
+
+/* Right side with inputs and buttons */
+.popup-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ... (Rest of your CSS) ... */
+
+.popup {
+  display: flex;
+  width: 900px;  /* Increased width */
+  height: 450px; /* Increased height */
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden; /* To handle the rounded borders of the popup */
+}
+
+.popup-left {
+  flex: 1;
+  background-color: rgb(67, 196, 103);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-right: 1px solid white; /* To give a separation, you can remove if you don't want this */
+}
+
+.popup-left img {
+  width: 120px;  /* Increased size */
+  height: 120px; /* Increased size */
+  margin-bottom: 10px;
+}
+
+.popup-left h4 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.popup-right {
+  flex: 2.5;  /* Increased flex to provide more space for contents */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.google-login, .facebook-login {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.google-login img, .facebook-login img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.google-login {
+  background: #4285F4;
+  color: white;
+}
+
+.facebook-login {
+  background: #1877F2;
+  color: white;
+}
+
+.google-login:hover {
+  background: #357ABD;
+}
+
+.facebook-login:hover {
+  background: #155293;
+}

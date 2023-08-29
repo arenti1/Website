@@ -1,0 +1,63 @@
+.background {
+  justify-content: flex-start;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  background: linear-gradient(to top, gray, white 60%);
+}
+
+
+.home {
+  display: flex;
+  height: 60%;
+}
+
+.title {
+  padding-top: 100px;
+  flex: 6
+}
+
+.MainText {
+  padding-top: 100px;
+  padding-left: 100px;
+  font-family: 'Yeseva One', cursive;
+  font-size: 50px;
+}
+
+.title h4 {
+  padding-left: 100px;
+}
+
+.interactiveModel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 4
+}
+
+.interactiveModel {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.exploreButton {
+  margin-top: 30px;
+  margin-left: 100px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: green;
+  border: none;
+  text-decoration: none;
+  font-size: 30;
+  font-weight:900;
+  border-radius: 5px;
+}
+
+.exploreButton :hover {
+  color: aquamarine;
+}
+
+/* 
+  justify-content: center;  Center children horizontally 
+  align-items: center;  Center children vertically
+*/

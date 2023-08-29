@@ -1,0 +1,86 @@
+.accessories-container {
+    display: flex;
+    height: 100vh;
+}
+
+.model-container {
+    flex: 1;
+    /* Style as needed */
+}
+
+.specs-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.spec-option {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.spec-option:hover {
+    border: 2px solid red;
+}
+
+.spec-option.selected {
+    border: 2px solid red;
+}
+
+
+/* Existing styles */
+.accessories-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Take full height of the viewport */
+}
+
+.model-container {
+    flex: 1;
+}
+
+/* New or Modified Styles */
+.specs-container {
+    flex: 1;
+    padding: 20px; /* Add some padding for better spacing */
+    background-color: lightgray;
+    overflow-y: auto; /* Ensure scrolling if content overflows */
+}
+
+.specs-container h2 {
+    font-size: 2.5em; /* Increase the size of the section titles */
+    margin-bottom: 10px; /* Add some margin for spacing */
+    font-weight: bold;
+}
+
+.spec-option {
+    background-color: white; 
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Show a hand cursor on hover */
+    transition: all 0.3s ease;
+}
+
+.spec-option.selected {
+    border: 2px solid red;
+}
+
+.spec-option:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
